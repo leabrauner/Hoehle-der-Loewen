@@ -1,15 +1,76 @@
 @import "variable";
 
-.app{
-  background-color: $primary-color;
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 100%;
+  margin:0;
+}
+
+* {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+#main {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
 
   .header {
-
+    height: 200px;
+    // background-image: url("../img/header.png");
+    background: lightgray;
+    margin: $standard-abstand;
   }
 
-  .ideenliste {
-    .idee {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $primary-color;
+    margin: $standard-abstand;
 
+    .item {
+      display: inline-block;
+      padding: 8px;
+      width: 25%;
+      text-align: center;
+      // box-shadow: 21px -25px 13px 1px rgba(0,0,0,0.56);
+
+      border-right: 1px solid $primary-color;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
     }
   }
+
+  .content {
+    margin: $standard-abstand;
+
+    .home {
+
+    }
+
+    .overview {
+      h2 {
+
+      }
+    }
+
+  }
+
 }
