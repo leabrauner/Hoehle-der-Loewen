@@ -1,7 +1,9 @@
 @mixin header {
   .header {
-
-    img {
+    .logo img {
+      width: 120px;
+    }
+    .app-header img {
       width: 700px;
     }
   }
