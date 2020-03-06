@@ -66,7 +66,7 @@ class Idea extends React.Component {
 
 export default class Overview extends React.Component{
     render() {
-        const elements = ideas.map(idea => {
+        const elements = this.props.ideas.map(idea => {
             return <Idea idea={idea} key={idea.id} />;
         });
 
