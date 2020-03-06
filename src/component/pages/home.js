@@ -7,16 +7,9 @@ export default class Home extends React.Component{
                 <h3>Home</h3>
                 <form>
                     <div className="row">
-                        <label>E-Mail</label>
-                        <input />
-                    </div>
-                    <div className="row">
-                        <label>Passwort</label>
-                        <input />
-                    </div>
-                    <div className="row">
-                        <label></label>
-                        <button>Senden</button>
+                        <input placeholder="benutzername"/>
+                        <input placeholder="passwort"/>
+                        <button>LOGIN</button>
                     </div>
                 </form>
             </div>
