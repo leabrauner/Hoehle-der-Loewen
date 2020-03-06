@@ -41,7 +41,7 @@ export default class Overview extends React.Component{
         });
 
         return <div className="overview">
-            <h2>Ideen- / Projektübersicht</h2>
+            <h3>Ideen- / Projektübersicht</h3>
             {elements}
         </div>;
     }

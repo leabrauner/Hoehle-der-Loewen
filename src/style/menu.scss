@@ -1,0 +1,27 @@
+@mixin menu {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    margin-top: $default-padding;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+    .item {
+      display: inline-block;
+      padding: 8px;
+      width: 25%;
+      text-align: center;
+      border-right: 1px solid $primary-color;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
