@@ -6,19 +6,12 @@
       margin: 0;
       padding-top: $default-padding;
       padding-bottom: 2 * $default-padding;
+      color: $secondary-color;
     }
 
     .row {
       display: flex;
       margin-bottom: $default-padding;
-
-      label {
-        display: inline-block;
-        min-width: 150px;
-        max-width: 150px;
-        text-align: right;
-        margin-right: $default-padding;
-      }
     }
 
     .panel {
@@ -27,7 +20,12 @@
     }
 
     .home {
-
+      input, button{
+        margin-right: $default-padding;
+      }
+      input{
+        padding: 2px;
+      }
     }
 
     .overview {
