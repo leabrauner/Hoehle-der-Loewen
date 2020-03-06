@@ -3,7 +3,7 @@ import React from "react";
 export default class Home extends React.Component{
     render() {
         return <div className="home">
-            <div class="panel">
+            <div className="panel">
                 <h3>Home</h3>
                 <form>
                     <div className="row">

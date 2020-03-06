@@ -1,11 +1,11 @@
 import {VIEWS} from "../constants";
 import {ChangeView} from "../actions";
 
-export default ({ init, on }) => {
+export default ({ init, on, update }) => {
 
     init({ view: VIEWS.HOME });
 
-    on(ChangeView, (view, state, update) => {
+    on(ChangeView, (state, view) => {
         state.view = view;
         update(state);
     });

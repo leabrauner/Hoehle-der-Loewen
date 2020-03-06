@@ -1,7 +1,6 @@
-import Home from './component/pages/home';
-import Overview from './component/pages/overview';
-
 export const VIEWS = {
-    HOME: Home,
-    OVERVIEW: Overview
+    HOME: 'Home',
+    OVERVIEW: 'Overview',
+    POLL: 'Poll',
+    EDIT: 'Edit'
 };
