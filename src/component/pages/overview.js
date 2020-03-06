@@ -60,10 +60,6 @@ class Idea extends React.Component {
                 <div className="author">{idea.author}</div>
                 <div className="description">{idea.description}</div>
             </div>
-
-
-
-
         </div>;
     }
 }
