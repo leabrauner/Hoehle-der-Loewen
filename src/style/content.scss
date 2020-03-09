@@ -12,14 +12,6 @@
     .row {
       display: flex;
       margin-bottom: $default-padding;
-
-      label {
-        display: inline-block;
-        min-width: 150px;
-        max-width: 150px;
-        text-align: right;
-        margin-right: $default-padding;
-      }
     }
 
     .panel {
@@ -28,7 +20,7 @@
     }
 
     .home {
-      input,button{
+      input, button{
         margin-right: $default-padding;
       }
       input{

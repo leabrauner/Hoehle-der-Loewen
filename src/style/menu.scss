@@ -3,20 +3,27 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid $primary-color;
+    border-top: none;
     color: $primary-color;
     margin-top: $default-padding;
     font-weight: bolder;
     text-transform: uppercase;
 
     .item {
-      display: inline-block;
+      display: block;
       padding: 8px;
       width: 25%;
       text-align: center;
+      border-top: 1px solid $primary-color;
       border-right: 1px solid $primary-color;
 
       &:hover {
         cursor: pointer;
+      }
+
+      &.selected {
+        color: white;
+        background: $primary-color;
       }
 
       &:last-child {
