@@ -6,11 +6,14 @@ export default ({ init, on, update }) => {
     init({ user: null });
 
     on(Login, (state, credentials) => {
-        http.post('user/login', credentials).then(result => {
-            const user = result.data !== ''  ? result.data : null;
+        // http.post('user/login', credentials).then(result => {
+        //    const user = result.data !== ''  ? result.data : null;
+        //    update({ user });
+        // });
 
-            update({ user });
-        });
+        if (credentials.email === 'lea' && credentials.password === 'test') {
+            update({ user: credentials });
+        }
     });
 
 }
