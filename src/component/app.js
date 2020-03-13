@@ -8,12 +8,10 @@ export default class App extends React.Component{
     render() {
         const  { view, user, ideas } = this.props;
 
-        console.log(view, user, ideas);
-
         return <div className="app">
             <Header/>
-            <Menu view={view} />
-            <Content view={view} />
+            <Menu view={view} user={user} />
+            <Content view={view} user={user} ideas={ideas}/>
         </div>;
     }
 }

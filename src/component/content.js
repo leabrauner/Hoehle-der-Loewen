@@ -27,7 +27,7 @@ export default class Content extends React.Component {
         const View = this.getView();
 
         return <div className="content">
-            <View/>
+            <View {...this.props}/>
         </div>;
     }
 }
