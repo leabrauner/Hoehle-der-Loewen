@@ -23,3 +23,16 @@
   @include menu();
   @include content();
 }
+
+.accordion {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid black;
+  flex-grow: 1;
+
+  .body {
+    &.hidden {
+      display: none;
+    }
+  }
+}

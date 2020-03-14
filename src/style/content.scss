@@ -73,17 +73,27 @@
     .overview {
       .idea {
         display: flex;
+        flex-flow: column;
         background: $background-color;
         margin-bottom: $default-padding;
 
-        img {
-          margin: $default-padding;
-        }
-
-        .info {
+        // container für Bild und allgemeine Infos
+        .details {
           display: flex;
-          flex-flow: column;
-          padding: $default-padding;
+
+          .image {
+            width: 120px;
+
+            img {
+              margin: $default-padding;
+            }
+          }
+
+          .info {
+            display: flex;
+            flex-flow: column;
+            padding: $default-padding;
+          }
         }
       }
     }

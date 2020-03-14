@@ -58,9 +58,9 @@ export const TEST_IDEAS = [{
                 created: '02.03.2020',
                 text: 'Lorem Ipsum'
             }, {
-                author: 'Donald J. Trump',
-                created: '02.03.2020',
-                text: 'Lorem Ipsum'
+                author: 'Linus Torvalds',
+                created: '14.03.2020',
+                text: 'Text Text Text Text Text Text Text Text Text Text Text Text Text Text'
             }
         ]
     },
@@ -78,7 +78,11 @@ export const TEST_IDEAS = [{
             presentation: 0.0,
             implementability: 0.0
         },
-        comments: []
+        comments: [{
+            author: 'Text Author',
+            created: '11.03.2020',
+            text: 'Kein Kommentar'
+        }]
     }
 }, {
     id: 2,

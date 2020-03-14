@@ -1,9 +1,9 @@
 import React from "react";
 
-import Home from './pages/home';
-import Overview from './pages/overview';
-import Poll from './pages/poll';
-import Admin from './pages/admin';
+import Home from './pages/home/home';
+import Overview from './pages/overview/overview';
+import Poll from './pages/poll/poll';
+import Admin from './pages/admin/admin';
 import {VIEWS} from "../constants";
 
 export default class Content extends React.Component {
