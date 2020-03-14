@@ -1,8 +1,10 @@
-@import "idea";
-
 @mixin content {
   .content {
     margin-top: $default-padding;
+
+    /**
+     * Allgemeines Styling im Content-Bereich.
+     */
 
     h3 {
       margin: 0;
@@ -17,22 +19,94 @@
     }
 
     .panel {
-      background: #efefef;
       padding: $default-padding;
     }
 
+    /**
+     * Seite 1) HOME - Startseite
+     */
+
     .home {
-      input, button{
-        margin-right: $default-padding;
+      .login {
+        margin-bottom: $default-padding;
+
+        input, button{
+          margin-right: $default-padding;
+        }
+        input{
+          padding: 2px;
+        }
       }
-      input{
-        padding: 2px;
+
+      .info {
+        display: flex;
+        flex-flow: column;
+
+        .paws {
+          display: flex;
+          align-items: center;
+          justify-content: stretch;
+          margin-top: $default-padding;
+          margin-bottom: $default-padding;
+
+          .paw {
+            display: flex;
+            flex-flow: column;
+            margin: 0 auto;
+
+            img {
+              margin-bottom: $default-padding;
+            }
+          }
+        }
+
+        .text {
+          margin: $default-padding;
+        }
       }
     }
+
+    /**
+     * Seite 2) Übersicht, Bewertungen und Kommentare zu Ideen
+     */
 
     .overview {
-      @include idea();
+      .idea {
+        display: flex;
+        background: $background-color;
+        margin-bottom: $default-padding;
+
+        img {
+          margin: $default-padding;
+        }
+
+        .info {
+          display: flex;
+          flex-flow: column;
+          padding: $default-padding;
+        }
+      }
     }
 
+    /**
+     * Seite 3) Abstimmung
+     */
+
+    .poll {
+
+    }
+
+    /**
+     * Seite 4) Admin-Einstellungen
+     */
+
+    .admin {
+      .idea {
+        display: flex;
+        padding: $default-padding;
+        background: $background-color;
+        margin-bottom: $default-padding;
+      }
+    }
   }
 }

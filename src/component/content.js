@@ -3,7 +3,7 @@ import React from "react";
 import Home from './pages/home';
 import Overview from './pages/overview';
 import Poll from './pages/poll';
-import Edit from './pages/edit';
+import Admin from './pages/admin';
 import {VIEWS} from "../constants";
 
 export default class Content extends React.Component {
@@ -17,7 +17,7 @@ export default class Content extends React.Component {
             case VIEWS.POLL:
                 return Poll;
             case VIEWS.EDIT:
-                return Edit;
+                return Admin;
             default:
                 return () => <div>404</div>;
         }
