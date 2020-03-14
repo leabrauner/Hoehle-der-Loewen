@@ -6,12 +6,12 @@ import Content from "./content";
 
 export default class App extends React.Component{
     render() {
-        const  { view, user, ideas } = this.props;
+        const  { view, user } = this.props;
 
         return <div className="app">
             <Header/>
             <Menu view={view} user={user} />
-            <Content view={view} user={user} ideas={ideas}/>
+            <Content {...this.props}/>
         </div>;
     }
 }

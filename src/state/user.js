@@ -13,6 +13,8 @@ export default ({ init, on, update }) => {
 
         if (credentials.email === 'lea' && credentials.password === 'test') {
             update({ user: credentials });
+        } else {
+            update({ error: 'Ungültige Zugangsdaten.'})
         }
     });
 

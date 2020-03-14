@@ -12,10 +12,15 @@ class LoginForm extends React.Component {
     }
 
     render() {
+        const{error} = this.props;
         const {email, password} = this.state;
         const login = () => Login({email, password});
+        const hidden = error ? 'hidden' : '';
 
         return <div className="login">
+            <div className={`row ${hidden}`}>
+                <div className="error">{error}</div>
+            </div>
             <div className="row">
                 <input
                     value={email}
@@ -65,7 +70,7 @@ export default class Home extends React.Component {
 
     render() {
         const {paw} = this.state;
-        const {user, ideas} = this.props;
+        const {user, ideas, error} = this.props;
         const View = user == null ? LoginForm : Welcome;
 
         const select = paw => this.setState(({paw}));
@@ -77,7 +82,11 @@ export default class Home extends React.Component {
         return <div className="home">
             <div className="panel">
                 <h3>Home</h3>
-                <View user={user} ideas={ideas}/>
+                <View
+                    user={user}
+                    ideas={ideas}
+                    error={error}
+                />
                 <div className="info">
                     <div className="paws">
                         {elements}
