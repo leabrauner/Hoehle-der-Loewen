@@ -1,8 +1,12 @@
 @mixin header {
   .header {
+
+    // ITGAIN Logo
     .logo img {
       width: 120px;
     }
+
+    // HDW Logo
     .app-header, .app-header img {
       height: 250px;
     }

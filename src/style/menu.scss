@@ -4,9 +4,11 @@
     justify-content: center;
     align-items: center;
     color: $primary-color;
-    margin-top: $default-padding;
+    margin-top: $default-spacing;
     font-weight: bolder;
     text-transform: uppercase;
+
+    // Einzelne Menüelemente
 
     .item {
       display: flex;

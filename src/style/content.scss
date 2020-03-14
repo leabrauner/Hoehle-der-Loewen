@@ -1,6 +1,6 @@
 @mixin content {
   .content {
-    margin-top: $default-padding;
+    margin-top: $default-spacing;
 
     /**
      * Allgemeines Styling im Content-Bereich.
@@ -8,36 +8,36 @@
 
     h3 {
       margin: 0;
-      padding-top: $default-padding;
-      padding-bottom: 2 * $default-padding;
+      padding-top: $default-spacing;
+      padding-bottom: 2 * $default-spacing;
       color: $secondary-color;
     }
 
     .row {
       display: flex;
-      margin-bottom: $default-padding;
+      margin-bottom: $default-spacing;
     }
 
     .panel {
-      padding: $default-padding;
+      padding: $default-spacing;
     }
 
-    /**
-     * Seite 1) HOME - Startseite
-     */
+    // Seite 1) HOME - Startseite
 
     .home {
       .login {
-        margin-bottom: $default-padding;
+        margin-bottom: $default-spacing;
 
-        input, button{
-          margin-right: $default-padding;
+        input, button {
+          margin-right: $default-spacing;
         }
-        input{
+
+        input {
           padding: 2px;
         }
       }
 
+      // Info-Bereich enthält die Tatzen und Texte
       .info {
         display: flex;
         flex-flow: column;
@@ -46,38 +46,37 @@
           display: flex;
           align-items: center;
           justify-content: stretch;
-          margin-top: $default-padding;
-          margin-bottom: $default-padding;
+          margin-top: $default-spacing;
+          margin-bottom: $default-spacing;
 
+          // Tatze mit Bild
           .paw {
             display: flex;
             flex-flow: column;
             margin: 0 auto;
 
             img {
-              margin-bottom: $default-padding;
+              margin-bottom: $default-spacing;
             }
           }
         }
 
         .text {
-          margin: $default-padding;
+          margin: $default-spacing;
         }
       }
     }
 
-    /**
-     * Seite 2) Übersicht, Bewertungen und Kommentare zu Ideen
-     */
+    // Seite 2) Übersicht, Bewertungen und Kommentare zu Ideen
 
     .overview {
       .idea {
         display: flex;
         flex-flow: column;
         background: $background-color;
-        margin-bottom: $default-padding;
+        margin-bottom: $default-spacing;
 
-        // container für Bild und allgemeine Infos
+        // Container für Bild und allgemeine Infos
         .details {
           display: flex;
 
@@ -85,37 +84,33 @@
             width: 120px;
 
             img {
-              margin: $default-padding;
+              margin: $default-spacing;
             }
           }
 
           .info {
             display: flex;
             flex-flow: column;
-            padding: $default-padding;
+            padding: $default-spacing;
           }
         }
       }
     }
 
-    /**
-     * Seite 3) Abstimmung
-     */
+    // Seite 3) Abstimmung
 
     .poll {
 
     }
 
-    /**
-     * Seite 4) Admin-Einstellungen
-     */
+    // Seite 4) Admin-Einstellungen
 
     .admin {
       .idea {
         display: flex;
-        padding: $default-padding;
+        padding: $default-spacing;
         background: $background-color;
-        margin-bottom: $default-padding;
+        margin-bottom: $default-spacing;
       }
     }
   }

@@ -17,7 +17,7 @@
   display: flex;
   flex-flow: column;
   width: 700px;
-  padding-top: $default-padding;
+  padding-top: $default-spacing;
 
   @include header();
   @include menu();
@@ -31,6 +31,8 @@
   flex-grow: 1;
 
   .body {
+
+    // Wenn am Body die "hidden"-Klasse hängt, verstecken wir ihn
     &.hidden {
       display: none;
     }
