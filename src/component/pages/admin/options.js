@@ -9,7 +9,7 @@ export default class Options extends React.Component {
             return <option key={value} onChange={() => setDuration(value)}>{value}</option>;
         });
 
-        return <div className="options">
+        return <div className="panel options">
             <select selected={duration}>
                 {options}
             </select>

@@ -9,11 +9,9 @@ export default class Home extends React.Component {
         const View = user == null ? LoginForm : Welcome;
 
         return <div className="home">
-            <div className="panel">
-                <h3>Home</h3>
-                <View user={user} ideas={ideas} error={error} />
-                <Info />
-            </div>
+            <h3>Home</h3>
+            <View user={user} ideas={ideas} error={error}/>
+            <Info/>
         </div>;
     }
 }

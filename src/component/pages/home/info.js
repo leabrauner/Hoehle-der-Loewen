@@ -29,7 +29,7 @@ export default class Info extends React.Component {
             key={i} paw={paw} select={select}
         />);
 
-        return <div className="info">
+        return <div className="panel info">
             <div className="paws">
                 {elements}
             </div>

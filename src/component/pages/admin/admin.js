@@ -12,13 +12,11 @@ export default class Admin extends React.Component {
         />);
 
         return <div className="admin">
-            <div className="panel">
-                <h3>Abstimmung</h3>
-                <Options
-                    duration={duration}
-                    setDuration={SetVotingDuration}
-                />
-            </div>
+            <h3>Abstimmung</h3>
+            <Options
+                duration={duration}
+                setDuration={SetVotingDuration}
+            />
             <div className="panel">
                 {elements}
             </div>

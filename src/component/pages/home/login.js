@@ -16,7 +16,7 @@ export default class LoginForm extends React.Component {
         const login = () => Login({email, password});
         const hidden = error ? 'hidden' : '';
 
-        return <div className="login">
+        return <div className="panel login">
             <div className={`row ${hidden}`}>
                 <div className="error">{error}</div>
             </div>
