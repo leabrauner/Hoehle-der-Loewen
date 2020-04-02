@@ -1,3 +1,5 @@
+@import "variable";
+
 @mixin content {
   .content {
     margin-top: $default-spacing;
@@ -11,6 +13,8 @@
       padding-top: $default-spacing;
       padding-bottom: 2 * $default-spacing;
       color: $secondary-color;
+      font-family: $secondary-font;
+      font-size: $font-size;
     }
 
     .row {
@@ -63,6 +67,7 @@
 
         .text {
           margin: $default-spacing;
+          font-family: $primary-font;
         }
       }
     }
@@ -75,6 +80,7 @@
         flex-flow: column;
         background: $background-color;
         margin-bottom: $default-spacing;
+        font-family: $primary-font;
 
         // Container für Bild und allgemeine Infos
         .details {
@@ -82,6 +88,7 @@
 
           .image {
             width: 120px;
+            height: 120px;
 
             img {
               margin: $default-spacing;

@@ -8,6 +8,7 @@ export const VIEWS = {
 export const DURATION = {
     MIN_2: 2,
     MIN_5: 5,
+    MIN_8: 8,
     MIN_10: 10,
     MIN_15: 15,
     MIN_20: 20,
@@ -15,34 +16,34 @@ export const DURATION = {
 
 export const PAWS = {
     A: {
-        title: 'Tatze 1',
+        title: 'Worüber wird abgestimmt?',
         text: 'Test Text 1',
-        image: 'tatze1.png'
+        image: './img/paw_light.png'
     },
     B: {
-        title: 'Tatze 2',
+        title: 'Für wen kann ich abstimmen?',
         text: 'Test Text 2',
-        image: 'tatze2.png'
+        image: './img/paw_light.png'
 
     },
     C: {
-        title: 'Tatze 3',
+        title: 'Wo kann ich abstimmen?',
         text: 'Test Text 3',
-        image: 'tatze3.png'
+        image: './img/paw_light.png'
 
     },
     D: {
-        title: 'Tatze 4',
+        title: 'Wann kann ich abstimmen?',
         text: 'Test Text 4',
-        image: 'tatze4.png'
+        image: './img/paw_light.png'
     }
 };
 
 export const TEST_IDEAS = [{
     id: 0,
-    image: 'bla',
-    title: 'Titel 1',
-    author: 'Author 1',
+    image: './img/gaertner.png',
+    title: 'Biologisch abbaubarer Virenvernichter',
+    author: 'Günther Gärtner',
     status: 'DONE',
     description: 'Description 1',
     poll: {
@@ -66,9 +67,9 @@ export const TEST_IDEAS = [{
     },
 }, {
     id: 1,
-    image: 'bla',
-    title: 'Titel 2',
-    author: 'Author 2',
+    image: './img/musiker.png',
+    title: 'Programm zur Umwandlung von Gähnen in Melodie',
+    author: 'Michael Musiker',
     status: 'PENDING',
     description: 'Description 2',
     poll: {
@@ -86,9 +87,9 @@ export const TEST_IDEAS = [{
     }
 }, {
     id: 2,
-    image: 'bla',
-    title: 'Titel 3',
-    author: 'Author 3',
+    image: './img/boss',
+    title: 'Mitarbeiter-Überwachungssystem',
+    author: 'Bernd Boss',
     status: 'LOCKED',
     description: 'Description 3'
 }];
