@@ -14,7 +14,7 @@
       padding-bottom: 2 * $default-spacing;
       color: $secondary-color;
       font-family: $secondary-font;
-      font-size: $font-size;
+      font-size: $title-size;
     }
 
     .row {
@@ -89,6 +89,7 @@
           .image {
             width: 120px;
             height: 120px;
+            margin: $default-spacing;
 
             img {
               margin: $default-spacing;
@@ -98,7 +99,39 @@
           .info {
             display: flex;
             flex-flow: column;
-            padding: $default-spacing;
+            padding: $little-spacing;
+          }
+          .title{
+            margin: $little-spacing;
+            font-family: $primary-font;
+            font-size: $text-size;
+          }
+          .author{
+            margin: $little-spacing;
+            font-family: $primary-font;
+            font-size: $text-size;
+          }
+          .description{
+            margin: $little-spacing;
+            font-family: $primary-font;
+            font-size: $description-size;
+          }
+          .poll {
+            margin: $little-spacing;
+            font-family: $primary-font;
+            font-size: $description-size;
+
+            .rating {
+              margin: $little-spacing;
+              font-family: $primary-font;
+              font-size: $description-size;
+            }
+
+            .comments {
+              margin: $little-spacing;
+              font-family: $primary-font;
+              font-size: $description-size;
+            }
           }
         }
       }

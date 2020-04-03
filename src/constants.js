@@ -42,10 +42,10 @@ export const PAWS = {
 export const TEST_IDEAS = [{
     id: 0,
     image: './img/gaertner.png',
-    title: 'Biologisch abbaubarer Virenvernichter',
-    author: 'Günther Gärtner',
+    title: 'Idee: Biologisch abbaubarer Virenvernichter',
+    author: 'Author: Günther Gärtner',
     status: 'DONE',
-    description: 'Description 1',
+    description: 'In Zeiten des Klimawandels ist es besonders wichtig darauf zu achten, dass unsere Virenvernichter biologisch abbaubar sind. So verschmutzen wir nicht das Grundwasser. Ebenso wichtig ist es, dass wir uns bewusst machen, dass Cybercrime nach wie vor ein großes Problem für uns alle darstellt.',
     poll: {
         rating: {
             overall: 3.4,
@@ -57,11 +57,11 @@ export const TEST_IDEAS = [{
             {
                 author: 'Donald J. Trump',
                 created: '02.03.2020',
-                text: 'Lorem Ipsum'
+                text: "Sorry losers and haters, but my I.Q. is one of the highest -and you all know it! Please don't feel so stupid or insecure, it's not your fault"
             }, {
-                author: 'Linus Torvalds',
+                author: 'Monika Mitarbeiter',
                 created: '14.03.2020',
-                text: 'Text Text Text Text Text Text Text Text Text Text Text Text Text Text'
+                text: 'Tolle Idee, Günther, und wichtiges Thema!!'
             }
         ]
     },
