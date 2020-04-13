@@ -1,3 +1,8 @@
+import PAW_LIGHT_IMAGE from './img/paw_light.png';
+import GAERTNER_IMG from './img/gaertner.png';
+import BOSS_IMG from './img/boss.png';
+import MUSIKER_IMG from './img/musiker.png';
+
 export const VIEWS = {
     HOME: 'Home',
     OVERVIEW: 'Overview',
@@ -18,30 +23,28 @@ export const PAWS = {
     A: {
         title: 'Worüber wird abgestimmt?',
         text: 'Test Text 1',
-        image: './img/paw_light.png'
+        image: PAW_LIGHT_IMAGE
     },
     B: {
         title: 'Für wen kann ich abstimmen?',
         text: 'Test Text 2',
-        image: './img/paw_light.png'
-
+        image: PAW_LIGHT_IMAGE
     },
     C: {
         title: 'Wo kann ich abstimmen?',
         text: 'Test Text 3',
-        image: './img/paw_light.png'
-
+        image: PAW_LIGHT_IMAGE
     },
     D: {
         title: 'Wann kann ich abstimmen?',
         text: 'Test Text 4',
-        image: './img/paw_light.png'
+        image: PAW_LIGHT_IMAGE
     }
 };
 
 export const TEST_IDEAS = [{
     id: 0,
-    image: './img/gaertner.png',
+    image: GAERTNER_IMG,
     title: 'Idee: Biologisch abbaubarer Virenvernichter',
     author: 'Author: Günther Gärtner',
     status: 'DONE',
@@ -67,7 +70,7 @@ export const TEST_IDEAS = [{
     },
 }, {
     id: 1,
-    image: './img/musiker.png',
+    image: MUSIKER_IMG,
     title: 'Programm zur Umwandlung von Gähnen in Melodie',
     author: 'Michael Musiker',
     status: 'PENDING',
@@ -87,7 +90,7 @@ export const TEST_IDEAS = [{
     }
 }, {
     id: 2,
-    image: './img/boss',
+    image: BOSS_IMG,
     title: 'Mitarbeiter-Überwachungssystem',
     author: 'Bernd Boss',
     status: 'LOCKED',
